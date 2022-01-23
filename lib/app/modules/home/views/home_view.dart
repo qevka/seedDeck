@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
+import 'package:seed_deck/app/routes/app_pages.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -9,6 +9,12 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.chevron_left),
+          onPressed: () {
+            Get.toNamed(Routes.login);
+          },
+        ),
         title: Text('HomeView'),
         centerTitle: true,
       ),

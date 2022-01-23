@@ -15,7 +15,7 @@ const int functionsPort = 5001;
 const int authPort = 9099;
 
 /// current firebase mode. Make sure to keep this in 'online' mode for production
-final FirebaseMode mode = FirebaseMode.online;
+final FirebaseMode mode = FirebaseMode.local;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,6 +38,7 @@ void main() async {
 
   runApp(
     GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Application",
       initialRoute: AppPages.initial,
       getPages: AppPages.routes,

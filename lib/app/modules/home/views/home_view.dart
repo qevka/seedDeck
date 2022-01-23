@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:seed_deck/app/routes/app_pages.dart';
@@ -12,6 +13,7 @@ class HomeView extends GetView<HomeController> {
         leading: IconButton(
           icon: Icon(Icons.chevron_left),
           onPressed: () {
+            FirebaseAuth.instance.signOut();
             Get.toNamed(Routes.login);
           },
         ),

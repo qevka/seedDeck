@@ -40,7 +40,7 @@ void main() async {
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Application",
-      initialRoute: AppPages.initial,
+      initialRoute: FirebaseAuth.instance.currentUser != null ? Routes.home : Routes.login,
       getPages: AppPages.routes,
     ),
   );

@@ -6,7 +6,10 @@ environment:
   sdk: '>=2.12.0 <3.0.0'
 
 dependencies: 
+  qr_code_scanner: ^0.6.1
   cupertino_icons: ^1.0.2
+  path_provider: any
+  get: 4.6.1
   flutter: 
     sdk: flutter
 
@@ -17,5 +20,7 @@ dev_dependencies:
     sdk: flutter
 
 flutter: 
+  assets: 
+    - assets/images/yourlogo.png
   uses-material-design: true
 

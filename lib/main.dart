@@ -10,9 +10,9 @@ import 'package:get/get.dart';
 import 'app/routes/app_pages.dart';
 
 /// network port definitions
-const String firestorePort = '8080';
-const String functionsPort = '5001';
-const String authPort = '9099';
+const int firestorePort = 8080;
+const int functionsPort = 5001;
+const int authPort = 9099;
 
 /// current firebase mode. Make sure to keep this in 'online' mode for production
 final FirebaseMode mode = FirebaseMode.online;
@@ -29,7 +29,7 @@ void main() async {
         sslEnabled: false,
         persistenceEnabled: false,
       );
-      FirebaseFunctions.instance.useFunctionsEmulator(origin: 'http://$host:$functionsPort');
+      FirebaseFunctions.instance.useFunctionsEmulator(host, functionsPort);
       await FirebaseAuth.instance.useEmulator('http://$host:$authPort');
       break;
     case FirebaseMode.online:

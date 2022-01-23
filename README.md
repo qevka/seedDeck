@@ -1,16 +1,33 @@
-# seed_deck
+<h1 align="center">Welcome to seedDeck 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+</p>
 
-A new Flutter project.
+> This app will help organize seeds for gardeners, so that they can track the performance of different varieties from year to year. This will be a complete organizational system from cataloging to lookups. Plants will be tracked with QR codes and photos that are take of them throughout their life cycle. Meta data about plant growth and fruit quality will be entered and tracked. Hopefully you find this project interesting if you want to contribute or get involved let me know. support@qevka.com.
 
-## Getting Started
+### 🏠 [Homepage](www.github.com/qevka/seeddeck)
 
-This project is a starting point for a Flutter application.
+## Run tests
 
-A few resources to get you started if this is your first Flutter project:
+```sh
+flutter test
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Author
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+👤 **Caleb Maccarone**
+
+* Website: www.qevka.com
+* Github: [@qevka](https://github.com/qevka)
+* LinkedIn: [@maccarone](https://linkedin.com/in/maccarone)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/qevka/seedDeck/issues). 
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

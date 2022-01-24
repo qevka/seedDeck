@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:seed_deck/app/modules/home/controllers/home_controller.dart';
+import 'package:seed_deck/app/modules/home/views/seed_detail.dart';
 
 class Scanner extends StatefulWidget {
   const Scanner({Key? key}) : super(key: key);
@@ -33,6 +34,9 @@ class _ScannerState extends State<Scanner> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("find a seed"),
+      ),
       body: Column(
         children: <Widget>[
           Expanded(flex: 4, child: _buildQrView(context)),
@@ -137,11 +141,8 @@ class _ScannerState extends State<Scanner> {
       this.controller = controller;
     });
     controller.scannedDataStream.listen((scanData) {
-      setState(() {
-        Get.find<HomeController>().saveSeed(scanData.code!);
-        Get.back();
-        result = scanData;
-      });
+      var foundSeed = Get.find<HomeController>().seeds.where((p0) => p0.id == scanData.code).toList()[0];
+      Get.to(() => SeedDetail(seed: foundSeed));
     });
   }
 

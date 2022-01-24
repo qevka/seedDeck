@@ -10,12 +10,10 @@ class HomeController extends GetxController {
     // TODO: implement onInit
     super.onInit();
     seeds.bindStream(Get.find<FirestoreService>().getSeeds());
+    print(seeds.length);
   }
 
   saveSeed(String data) async {
-    Get.back();
-    Seed seed = Seed.fromQRCode(data);
-    await Get.find<FirestoreService>().saveSeed(seed);
     print("seed was saved");
   }
 }

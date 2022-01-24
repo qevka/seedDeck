@@ -7,8 +7,9 @@ part of 'seed.dart';
 // **************************************************************************
 
 Seed _$SeedFromJson(Map<String, dynamic> json) => Seed(
-      seedType: json['seedType'] as String,
-      name: json['name'] as String,
+      seedType: json['seedType'] as String?,
+      quantity: json['quantity'] as int?,
+      name: json['name'] as String?,
       fertilizationNotes: (json['fertilizationNotes'] as List<dynamic>?)
           ?.map((e) => Note.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -17,7 +18,7 @@ Seed _$SeedFromJson(Map<String, dynamic> json) => Seed(
           .toList(),
       germinationRate: (json['germinationRate'] as num?)?.toDouble(),
       inGarden: json['inGarden'] as bool? ?? false,
-      packagedYear: json['packagedYear'] as String,
+      packagedYear: json['packagedYear'] as int?,
       photos:
           (json['photos'] as List<dynamic>?)?.map((e) => e as String).toList(),
       soilNotes: (json['soilNotes'] as List<dynamic>?)
@@ -31,6 +32,7 @@ Seed _$SeedFromJson(Map<String, dynamic> json) => Seed(
     );
 
 Map<String, dynamic> _$SeedToJson(Seed instance) => <String, dynamic>{
+      'quantity': instance.quantity,
       'perennial': instance.perennial,
       'coldCrop': instance.coldCrop,
       'inGarden': instance.inGarden,

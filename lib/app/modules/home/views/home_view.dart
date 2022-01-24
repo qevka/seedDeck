@@ -1,6 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:seed_deck/app/data/seed.dart';
+import 'package:seed_deck/app/modules/home/views/seed_detail.dart';
 import 'package:seed_deck/app/routes/app_pages.dart';
 
 import '../controllers/home_controller.dart';
@@ -27,12 +29,54 @@ class HomeView extends GetView<HomeController> {
         title: Text('HomeView'),
         centerTitle: true,
       ),
-      body: Center(
-        child: Text(
-          'HomeView is working',
-          style: TextStyle(fontSize: 20),
-        ),
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          return SeedCell(seed: controller.seeds[index]);
+        },
+        itemCount: controller.seeds.length,
       ),
     );
+  }
+}
+
+class SeedCell extends GetView<HomeController> {
+  Seed seed;
+
+  SeedCell({required this.seed});
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+        onTap: () {
+          Get.to(SeedDetail(seed: seed));
+        },
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            color: Colors.blueGrey,
+            height: 150,
+            width: Get.width,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    Text(
+                      seed.seedType ?? "",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Text(seed.name ?? "")
+                  ],
+                ),
+                Column(
+                  children: [
+                    Text(seed.germinationRate != null ? "Germination Rate: %${seed.germinationRate! * 100}" : ""),
+                    Text("Quantity: ${seed.quantity}")
+                  ],
+                )
+              ],
+            ),
+          ),
+        ));
   }
 }

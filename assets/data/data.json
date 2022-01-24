@@ -1,0 +1,212 @@
+{
+  "data": [
+    {
+      "id": "00AD887068",
+      "seedType": "SQUASH",
+      "name": "Waltham Butternut",
+      "germinationRate": 0.88,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00E2BE389C",
+      "seedType": "WATERMELON",
+      "name": "sugar baby",
+      "germinationRate": 0.85,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00BB7491DA",
+      "seedType": "SQUASH",
+      "name": "Acorn table king (bush)",
+      "germinationRate": 0.89,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "009B4F3AC0",
+      "seedType": "Melon",
+      "name": "honey rock",
+      "germinationRate": 0.91,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "00CFB13CA2",
+      "seedType": "SQUASH",
+      "name": "Round Zucchini",
+      "germinationRate": 0.89,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "0083471F8D",
+      "seedType": "Pumpkin",
+      "name": "small sugar",
+      "germinationRate": 0.88,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00A293A690",
+      "seedType": "WATERMELON",
+      "name": "Black Diamond",
+      "germinationRate": 0.9,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00E80CB862",
+      "seedType": "WATERMELON",
+      "name": "Congo",
+      "germinationRate": 0.92,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00FF8B69EC",
+      "seedType": "Melon",
+      "name": "Honey Dew Green Fresh",
+      "germinationRate": 0.89,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "009494179A",
+      "seedType": "cucumber",
+      "name": "Poinsett 76",
+      "germinationRate": 0.88,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "00B513201F",
+      "seedType": "cucumber",
+      "name": "Boston Pickling",
+      "germinationRate": 0.91,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "00C6AFD161",
+      "seedType": "Melon",
+      "name": "hearts of Gold",
+      "germinationRate": 0.91,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "00C1136AE0",
+      "seedType": "cucumber",
+      "name": "Marketmore",
+      "germinationRate": 0.89,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "003F765138",
+      "seedType": "cucumber",
+      "name": "straight eight",
+      "germinationRate": 0.87,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "00F94CC842",
+      "seedType": "WATERMELON",
+      "name": "crimson sweet",
+      "germinationRate": 0.95,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00CE804844",
+      "seedType": "SQUASH",
+      "name": "cocozelle",
+      "germinationRate": 0.88,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00A9BEDB93",
+      "seedType": "Melon",
+      "name": "Hales Best Jumbo",
+      "germinationRate": 0.88,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "008091784F",
+      "seedType": "SQUASH",
+      "name": "scallop Early white (bush)",
+      "germinationRate": 0.89,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00F94A09F3",
+      "seedType": "SQUASH",
+      "name": "early prolific straight neck",
+      "germinationRate": 0.85,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00BB8D5CDB",
+      "seedType": "Melon",
+      "name": "banana",
+      "germinationRate": 0.91,
+      "packagedYear": 2022,
+      "quantity": 30
+    },
+    {
+      "id": "00B132929D",
+      "seedType": "WATERMELON",
+      "name": "Tendersweet Orange",
+      "germinationRate": 0.85,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "008FAD7AA3",
+      "seedType": "Melon",
+      "name": "Rocky Ford Green Flesh",
+      "germinationRate": 0.93,
+      "packagedYear": 2022,
+      "quantity": 50
+    },
+    {
+      "id": "0004FA86DF",
+      "seedType": "SQUASH",
+      "name": "Vegetable Spaghetti",
+      "germinationRate": 0.85,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "00E90756C3",
+      "seedType": "WATERMELON",
+      "name": "charleston grey",
+      "germinationRate": 0.92,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "008F7A411D",
+      "seedType": "SQUASH",
+      "name": "table Queen",
+      "germinationRate": 0.85,
+      "packagedYear": 2022,
+      "quantity": 25
+    },
+    {
+      "id": "004H7J411L",
+      "seedType": "SQUASH",
+      "name": "Golden Zuchini",
+      "germinationRate": 0.88,
+      "packagedYear": 2022,
+      "quantity": 28
+    }
+  ]
+}

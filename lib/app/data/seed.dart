@@ -7,6 +7,9 @@ part 'seed.g.dart';
 
 @JsonSerializable()
 class Seed {
+  ///[quantity] current seeds in inventory
+  int? quantity;
+
   ///[perennial] boolean value indicating if the plant will grow for more than one year.
   bool? perennial;
 
@@ -29,13 +32,13 @@ class Seed {
   String id;
 
   ///[name] The name of the species.
-  String name;
+  String? name;
 
   ///[seedType] The family the seed belongs to.
-  String seedType;
+  String? seedType;
 
   ///[packagedYear] the year the seeds where produced
-  String packagedYear;
+  int? packagedYear;
 
   ///[photos] a list of photos of the plant growning.
   List<String>? photos;
@@ -47,6 +50,7 @@ class Seed {
 
   Seed(
       {required this.seedType,
+      required this.quantity,
       required this.name,
       this.fertilizationNotes,
       this.generalNotes,
@@ -60,21 +64,13 @@ class Seed {
       this.germMonth,
       this.perennial,
       String? id})
-      : id = id ?? Uuid().v4();
+      : id = id ?? Uuid().v4().substring(0, 10) {
+    if (taste != null) {
+      assert(taste! <= 10);
+    }
+  }
 
   factory Seed.fromJson(Map<String, dynamic> json) => _$SeedFromJson(json);
 
   Map<String, dynamic> toJson() => _$SeedToJson(this);
-
-  /// The format of the QR code data needs to be id_seedType_name_germRate_date
-  factory Seed.fromQRCode(String data) {
-    List values;
-    values = data.split("_");
-    return Seed(
-        id: values[0],
-        seedType: values[1],
-        name: values[2],
-        germinationRate: double.tryParse(values[3]) ?? 0,
-        packagedYear: values[4]);
-  }
 }

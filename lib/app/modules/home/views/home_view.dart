@@ -48,7 +48,11 @@ class SeedCell extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return GestureDetector(
         onTap: () {
-          Get.to(SeedDetail(seed: seed));
+          Get.to(
+              () => SeedDetail(
+                    seed: seed,
+                  ),
+              arguments: [1]);
         },
         child: Padding(
           padding: const EdgeInsets.all(8.0),

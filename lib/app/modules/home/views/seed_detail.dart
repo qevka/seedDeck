@@ -10,13 +10,13 @@ class SeedDetail extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
+    print(Get.arguments);
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(Icons.chevron_left),
           onPressed: () {
-            Get.back();
-            Get.back();
+            Get.close(Get.arguments[0]);
           },
         ),
         title: Text(seed.name ?? "Seed Details"),

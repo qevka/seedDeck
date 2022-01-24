@@ -141,8 +141,8 @@ class _ScannerState extends State<Scanner> {
       this.controller = controller;
     });
     controller.scannedDataStream.listen((scanData) {
-      var foundSeed = Get.find<HomeController>().seeds.where((p0) => p0.id == scanData.code).toList()[0];
-      Get.to(() => SeedDetail(seed: foundSeed));
+      Get.to(() => SeedDetail(seed: Get.find<HomeController>().seeds.where((e) => e.id == scanData.code).toList()[0]),
+          arguments: [2]);
     });
   }
 

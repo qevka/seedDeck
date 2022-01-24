@@ -3,7 +3,9 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
+import 'package:seed_deck/app/modules/home/controllers/home_controller.dart';
 
 class Scanner extends StatefulWidget {
   const Scanner({Key? key}) : super(key: key);
@@ -136,6 +138,8 @@ class _ScannerState extends State<Scanner> {
     });
     controller.scannedDataStream.listen((scanData) {
       setState(() {
+        Get.find<HomeController>().saveSeed(scanData.code!);
+        Get.back();
         result = scanData;
       });
     });

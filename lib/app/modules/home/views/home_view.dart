@@ -10,6 +10,13 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(
+              onPressed: () {
+                Get.toNamed(Routes.qrVIEW);
+              },
+              icon: Icon(Icons.camera))
+        ],
         leading: IconButton(
           icon: Icon(Icons.chevron_left),
           onPressed: () {

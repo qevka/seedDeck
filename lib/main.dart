@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'app/routes/app_pages.dart';
+import 'app/services/firestore.dart';
 
 /// network port definitions
 const int firestorePort = 8080;
@@ -15,7 +16,7 @@ const int functionsPort = 5001;
 const int authPort = 9099;
 
 /// current firebase mode. Make sure to keep this in 'online' mode for production
-final FirebaseMode mode = FirebaseMode.local;
+final FirebaseMode mode = FirebaseMode.online;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -38,6 +39,9 @@ void main() async {
 
   runApp(
     GetMaterialApp(
+      onInit: () {
+        Get.put(FirestoreService());
+      },
       debugShowCheckedModeBanner: false,
       title: "Application",
       initialRoute: FirebaseAuth.instance.currentUser != null ? Routes.home : Routes.login,

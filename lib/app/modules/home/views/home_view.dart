@@ -40,7 +40,7 @@ class HomeView extends GetView<HomeController> {
 }
 
 class SeedCell extends GetView<HomeController> {
-  Seed seed;
+  final Seed seed;
 
   SeedCell({required this.seed});
 

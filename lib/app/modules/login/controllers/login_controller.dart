@@ -19,6 +19,9 @@ class LoginController extends GetxController {
   Future<String?> loginUser(LoginData data) async {
     try {
       user = await FirebaseAuth.instance.signInWithEmailAndPassword(email: data.name, password: data.password);
+      if (FirebaseAuth.instance.currentUser != null) {
+        Get.toNamed(Routes.home);
+      }
     } catch (e) {
       return "login failed";
     }

@@ -4,7 +4,7 @@ import 'package:seed_deck/app/data/seed.dart';
 import 'package:seed_deck/app/modules/home/controllers/home_controller.dart';
 
 class SeedDetail extends GetView<HomeController> {
-  Seed seed;
+  final Seed seed;
 
   SeedDetail({required this.seed});
 

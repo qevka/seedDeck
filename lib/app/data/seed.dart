@@ -28,7 +28,7 @@ class Seed {
   ///[germinationRate] the rate of seeds out of 100 that will sprout.
   double? germinationRate;
 
-  ///[id] a unique identifier to indentify this specific species.
+  ///[id] a unique identifier to identify this specific species.
   String id;
 
   ///[name] The name of the species.
